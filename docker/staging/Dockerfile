@@ -15,10 +15,11 @@ COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* .npmrc* ./
 # 2. Rebuild the source code only when needed
 FROM base AS builder
 WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+
 # This will do the trick, use the corresponding env file for each environment.
 COPY .env.staging.sample .env.production
+RUN npm install
 RUN npm run build
 
 # 3. Production image, copy all the files and run next
