@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "telemetry:disable": "next telemetry disable",
+    "dev": "npm run telemetry:disable && next dev --turbopack",
+    "build": "npm run telemetry:disable && next build",
+    "start": "npm run telemetry:disable && next start",
     "lint": "next lint"
   },
   "dependencies": {
