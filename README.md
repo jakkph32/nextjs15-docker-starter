@@ -40,7 +40,7 @@ Open http://localhost:3003
 First, run the development server:
 
 ```bash
-pnpm run dev
+npm run dev
 # or
 yarn dev
 ```
