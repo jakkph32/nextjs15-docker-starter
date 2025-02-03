@@ -1,3 +1,4 @@
+name: foo-production
 services:
   with-docker-multi-env-staging:
     build:

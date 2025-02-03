@@ -1,3 +1,4 @@
+name: foo-development
 services:
   with-docker-multi-env-development:
     build:
