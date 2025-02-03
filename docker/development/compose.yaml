@@ -1,6 +1,6 @@
 name: foo-development
 services:
-  with-docker-multi-env-development:
+  web:
     build:
       context: ../../
       dockerfile: docker/development/Dockerfile

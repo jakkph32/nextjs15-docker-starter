@@ -1,6 +1,6 @@
 name: foo-production
 services:
-  with-docker-multi-env-production:
+  web:
     build:
       context: ../../
       dockerfile: docker/production/Dockerfile

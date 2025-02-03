@@ -1,6 +1,6 @@
 name: foo-production
 services:
-  with-docker-multi-env-staging:
+  web:
     build:
       context: ../../
       dockerfile: docker/staging/Dockerfile
