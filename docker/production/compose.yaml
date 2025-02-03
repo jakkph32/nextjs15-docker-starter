@@ -3,6 +3,6 @@ services:
     build:
       context: ../../
       dockerfile: docker/production/Dockerfile
-    image: with-docker-multi-env-production
+    image: foo-production
     ports:
       - '3003:3000'

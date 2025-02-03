@@ -3,6 +3,6 @@ services:
     build:
       context: ../../
       dockerfile: docker/staging/Dockerfile
-    image: with-docker-multi-env-staging
+    image: foo-staging
     ports:
       - '3002:3000'

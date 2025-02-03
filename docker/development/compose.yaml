@@ -3,6 +3,6 @@ services:
     build:
       context: ../../
       dockerfile: docker/development/Dockerfile
-    image: with-docker-multi-env-development
+    image: foo-development
     ports:
       - '3001:3000'
